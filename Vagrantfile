@@ -12,7 +12,7 @@ Vagrant.configure(2) do |config|
 
   # Every Vagrant development environment requires a box. You can search for
   # boxes at https://atlas.hashicorp.com/search.
-  config.vm.box = "ubuntu/trusty64"
+  config.vm.box = "puppetlabs/ubuntu-14.04-64-nocm"
 
   config.vm.provision "shell", path: "scripts/bootstrap.sh"
 
